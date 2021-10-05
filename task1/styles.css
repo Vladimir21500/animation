@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 32px;
+}
+.rect {
+  margin-bottom: 16px;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 100px;
+  transition-property: width, opacity;
+  transition-duration: 2s, 0.5s;
+}
+.rect:hover {
+  opacity: 1;
+  width: 100%;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+.easy {
+  transition-timing-function: ease;
+}
+.easy-in {
+  transition-timing-function: ease-in;
+}
+.easy-in-out {
+  transition-timing-function: ease-in-out;
+}
+.easy-out {
+  transition-timing-function: ease-out;
+}
